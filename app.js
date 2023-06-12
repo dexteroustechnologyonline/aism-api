@@ -40,8 +40,15 @@ app.use("/api/v1/contact", contactDetails);
 
 const blog = require("./routes/blogRoute");
 app.use("/api/v1/blog", blog);
+
 const vlog = require("./routes/vlogRoute");
 app.use("/api/v1/vlog", vlog);
+
+const banner = require("./routes/bannerRoute");
+app.use("/api/v1/banner", banner);
+
+const notification = require("./routes/notificationRoute");
+app.use("/api/v1/notification", notification);
 
 app.use(errorMiddleware);
 

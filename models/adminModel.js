@@ -7,8 +7,6 @@ const crypto = require("crypto");
 const adminSchema = mongoose.Schema({
   name: {
     type: String,
-    required: [true, "Please enter  name"],
-    trim: true,
   },
   email: {
     type: String,
@@ -24,14 +22,13 @@ const adminSchema = mongoose.Schema({
 
   mobile: {
     type: String,
-    required: [true, "Please provide mobile"],
     unique: [true, "password already exist"],
     trim: true,
   },
 
   role: {
     type: String,
-    default:"admin"
+    default: "admin",
   },
 
   resetPasswordToken: String,

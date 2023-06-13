@@ -95,8 +95,8 @@ exports.UploadBannerDeskImage = catchAsyncErrors(async (req, res, next) => {
       req.body.desktopImage,
       {
         folder: "Slider/DesktopImage",
-        width: 1500,
-        height: 470,
+        width: 1350,
+        height: 562,
         crop: "scale",
       }
     );
